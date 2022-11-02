@@ -16,6 +16,8 @@ package algo
 提示：
 1 <= s.length <= 1000
 s 仅由数字和英文字母组成
+
+test:"aacabdkacaa"
 */
 
 func longestPalindrome(s string) string {
