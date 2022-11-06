@@ -8,11 +8,6 @@ package algo
  * }
  */
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	p, q := head, head
 	for i := 0; i < n; i++ {

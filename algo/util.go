@@ -1,5 +1,10 @@
 package algo
 
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
 func Min(x, y int) int {
 	if x < y {
 		return x
