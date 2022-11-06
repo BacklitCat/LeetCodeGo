@@ -18,3 +18,10 @@ func Max(x, y int) int {
 	}
 	return y
 }
+
+func If3(condition bool, trueVal, falseVal interface{}) interface{} {
+	if condition {
+		return trueVal
+	}
+	return falseVal
+}
