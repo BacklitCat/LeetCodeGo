@@ -1,11 +1,9 @@
 package algo
 
-import "fmt"
-
-func Test() {
-	res := ambiguousCoordinates("(123)")
-	fmt.Println(res)
-}
+//func Test() {
+//	res := ambiguousCoordinates("(123)")
+//	fmt.Println(res)
+//}
 
 func getPos(s string) (pos []string) {
 	if s[0] != '0' || s == "0" {
