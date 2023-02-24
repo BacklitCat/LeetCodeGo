@@ -3,7 +3,7 @@ package algo
 import "log"
 
 // 2周目
-func Test() {
+func Test003902() {
 	log.Println(combinationSum003902([]int{2, 3, 6, 7}, 7))
 }
 
