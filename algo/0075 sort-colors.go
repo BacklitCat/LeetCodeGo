@@ -2,7 +2,7 @@ package algo
 
 import "log"
 
-func Test() {
+func Test75() {
 	nums := []int{2, 0, 2, 1, 1, 0}
 	sortColors(nums)
 	log.Println(nums)
