@@ -2,7 +2,7 @@ package algo
 
 import "log"
 
-func Test() {
+func Test64() {
 	log.Println(minPathSum([][]int{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}))
 }
 
