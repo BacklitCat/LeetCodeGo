@@ -2,7 +2,7 @@ package algo
 
 import "log"
 
-func Test() {
+func Test49() {
 	log.Println(groupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
 }
 
