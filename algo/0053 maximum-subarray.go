@@ -4,7 +4,7 @@ import (
 	"log"
 )
 
-func Test() {
+func Test53() {
 	log.Println(maxSubArray([]int{1}))
 	log.Println(maxSubArray([]int{5, 4, -1, 7, 8}))
 	log.Println(maxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
