@@ -2,10 +2,6 @@ package algo
 
 import "log"
 
-func Test() {
-	test128()
-}
-
 func test128() {
 	log.Println(longestConsecutive([]int{}))                             //0
 	log.Println(longestConsecutive([]int{1}))                            //1
