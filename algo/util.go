@@ -1,8 +1,17 @@
 package algo
 
+import "fmt"
+
 type ListNode struct {
 	Val  int
 	Next *ListNode
+}
+
+func PrintList(head *ListNode) {
+	for p := head; p != nil; p = p.Next {
+		fmt.Printf("%d ", p.Val)
+	}
+	fmt.Printf("\n")
 }
 
 // TreeNode
