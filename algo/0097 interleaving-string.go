@@ -11,6 +11,7 @@ func isInterleave(s1 string, s2 string, s3 string) bool {
 		dp[i] = make([]bool, s2Len+1)
 	}
 	dp[0][0] = true
+
 	for i := 0; i < s1Len && s1[i] == s3[i]; i++ {
 		dp[i+1][0] = true
 	}
@@ -20,15 +21,11 @@ func isInterleave(s1 string, s2 string, s3 string) bool {
 
 	for i := 0; i < s1Len; i++ {
 		for j := 0; j < s2Len; j++ {
-			if s3[i+j] == s1[i] {
-				dp[i+1][j+1] = dp[i][j+1]
-			} else if s3[i+j] == s2[j] {
-				dp[i+1][j+1] = dp[i+1][j]
-			} else {
-				continue
+			if s3[i+j+1] == s1[i] {
+				dp[i+1][j+1] = dp[i+1][j+1] || dp[i][j+1]
 			}
-			if s3[i+j] == s1[i] && s3[i+j] == s2[j] {
-				dp[i+1][j+1] = dp[i][j+1] || dp[i+1][j]
+			if s3[i+j+1] == s2[j] {
+				dp[i+1][j+1] = dp[i+1][j+1] || dp[i+1][j]
 			}
 		}
 	}
